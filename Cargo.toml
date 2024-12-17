@@ -1,0 +1,22 @@
+[package]
+name          = "gensecret"
+version       = "0.0.1"
+edition       = "2021"
+description   = "gensecret"
+authors       = [ "Heiko Seeberger <git@heikoseeberger.de>" ]
+license-file  = "LICENSE"
+readme        = "README.md"
+homepage      = "https://github.com/hseeberger/gensecret"
+repository    = "https://github.com/hseeberger/gensecret"
+documentation = "https://github.com/hseeberger/gensecret"
+
+[dependencies]
+anyhow      = { version = "1.0" }
+base64      = { version = "0.22" }
+clap        = { version = "4.5", features = [ "derive" ] }
+const-hex   = { version = "1.14" }
+derive_more = { version = "1.0", features = [ "display", "from_str" ] }
+rand        = { version = "0.8" }
+
+[dev-dependencies]
+assert_matches = { version = "1.5" }
